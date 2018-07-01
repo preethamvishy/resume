@@ -1,0 +1,15 @@
+.card {
+    display: inline-block;
+    background: linear-gradient(to top right, rgb(140, 207, 226) 0%, rgb(45, 167, 201) 100%);
+    width: 450px;
+    height: 550px;
+    position: absolute;
+    top:50%;
+    -ms-transform: translateX(0%) translateY(-50%);
+    -webkit-transform: translate(0%,-50%);
+    transform: translate(0%,-50%);
+    margin-left: 220px;
+    border-radius: 8px;
+    box-shadow: -15px -15px 5px rgb(199, 243, 255); 
+    color: white;
+}

@@ -1,36 +1,9 @@
 <ul class="sections">
-  <li class="section ">
+  <li *ngFor="let sec of sections; let i = index" class="section ">
     <div class="item hoverable">
-      <span class="glyphicon glyphicon-cog"></span>
-      <span style="word-spacing: 100vw">TECHNOLOGY</span>
+      <span class="glyphicon" [ngClass]="sec.icon"></span>
+      <span>{{sec.name}}</span>
     </div>
-    <span class="divider"></span>
-  </li>
-  <li class="section">
-    <div class="item hoverable">
-      <span class="glyphicon glyphicon-education"></span>
-      <span>EDUCATION</span>
-    </div>
-    <span class="divider"></span>
-  </li>
-  <li class="section ">
-    <div class="item hoverable">
-      <span class="glyphicon glyphicon-briefcase"></span>
-      <span>WORK</span>
-    </div>
-    <span class="divider"></span>
-  </li>
-  <li class="section ">
-    <div class="item hoverable">
-      <span class="glyphicon glyphicon-console"></span>
-      <span>OPEN SOURCE</span>
-    </div>
-    <span class="divider"></span>
-  </li>
-  <li class="section ">
-    <div class="item hoverable">
-      <span class="glyphicon glyphicon-user"></span>
-      <span>AWARDS</span>
-    </div>
+    <span *ngIf="i != sections.length - 1" class="divider"></span>
   </li>
 </ul>
